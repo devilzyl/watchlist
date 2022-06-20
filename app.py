@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/home')
 def hello():
-    return '<h1>hello watchlist<h1><img src="http://helloflask.com/totoro.gif">'
+    return '<h1>hello watchlist<h1><img src="/static/images/totoro.gif">'
 
 @app.route('/user/<name>')
 def user_page(name):
